@@ -1,0 +1,76 @@
+body {
+	background-color: black;
+	margin: 0 auto;
+	font-family: "Lato"
+}
+/*MENU ===========================*/
+#menu {
+	display: flex;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#menu ul li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	line-height: 3.5em;
+	flex: 1;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	
+}
+/*----------------------------------*/
+#menu ul li:first-child {
+	flex: 7;
+	text-align: left;
+	justify-content: flex-start;
+	padding-left: 3%;
+	text-transform: none;
+	font-weight: bold;
+	font-size: 1em;
+	
+}
+
+#menu ul li:first-child:hover {
+	background-color: black;
+}
+/*----------------------------------*/
+#menu ul li:nth-child(8) {
+	flex: 0.5;
+}
+
+#menu ul li:nth-child(9) {
+	flex: 0.5;
+}
+/*----------------------------------*/
+#menu ul li:last-child, #menu ul li:last-child:hover {
+	background-color: #41A62A;
+}
+/*----------------------------------*/
+#menu ul li:hover {
+	background-color: #41A62A;
+}
+/*----------------------------------*/
+#menu .selected {
+	color: #41A62A;
+	
+}
+
+#menu .selected:hover {
+	color: white;
+}
+/*----------------------------------*/
+#menu ul li a {
+	text-decoration: none;
+	color: white;
+}
+
