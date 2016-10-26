@@ -1,19 +1,37 @@
 body {
 	background-color: black;
 	margin: 0 auto;
-	font-family: "Lato"
+	font-family: "Lato";
 }
+
 /*MENU ===========================*/
 #menu {
 	display: flex;
+	flex-direction: row;
+	color: white;
+}
+
+#menu_left {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 1.1em;
+	width: 70%;
+}
+
+#menu_right {
+	flex: 5;
 }
 
 #menu ul {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	width: 100%;
-	justify-content: space-between;
+	justify-content: flex-end;
+	height: 100%;
 }
 
 #menu ul li {
@@ -22,34 +40,19 @@ body {
 	justify-content: center;
 	list-style: none;
 	line-height: 3.5em;
-	flex: 1;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 0.8em;
+	width: 6%;
 	
 }
 /*----------------------------------*/
-#menu ul li:first-child {
-	flex: 7;
-	text-align: left;
-	justify-content: flex-start;
-	padding-left: 3%;
-	text-transform: none;
-	font-weight: bold;
-	font-size: 1em;
-	
+#menu ul li:nth-child(7) {
+	width: 3%;
 }
 
-#menu ul li:first-child:hover {
-	background-color: black;
-}
-/*----------------------------------*/
 #menu ul li:nth-child(8) {
-	flex: 0.5;
-}
-
-#menu ul li:nth-child(9) {
-	flex: 0.5;
+	width: 3%;
 }
 /*----------------------------------*/
 #menu ul li:last-child, #menu ul li:last-child:hover {
@@ -73,4 +76,191 @@ body {
 	text-decoration: none;
 	color: white;
 }
+/*////////////////////////////////////////////////////*/
+/*DIV DU CONTENU*/
+/*////////////////////////////////////////////////////*/
+#page {
+	display: flex;
+	flex-direction: row;
+}
+/*GAUCHE ==============================*/
+#gauche {
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	flex: 1;
+	color: white;
+	height: 100%;
+}
 
+/*CATEGORIES +++++*/
+#categories ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#categories ul li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	line-height: 3em;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	border-bottom: solid 0.5px #333333;
+}
+
+#categories ul li:hover {
+	background-color: #41A62A;
+}
+/*----------------*/
+#categories ul li:first-child {
+	font-size: 0.7em;
+	text-transform: none;
+	width: 70%;
+	padding: 15%;
+	line-height: 1em;
+	padding-bottom: 2em;
+}
+
+#categories ul li:first-child:hover {
+	background-color: black;
+}
+/*----------------*/
+#categories ul li a {
+	width: 70%;
+	text-decoration: none;
+	color: white; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/*----------------*/
+#categories .selected {
+	background-color: #41A62A;
+}
+/*SEARCH +++++*/
+#search {
+	display: flex;
+	justify-content: center;
+	/*height: 20%;*/
+	padding: 40px 0;
+}
+
+#search input {
+	width: 70%;
+	align-content: center;
+}
+/*CATEG_ARTICLES +++++*/
+#categ_articles {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#categ_articles div {
+	width: 70%;
+
+}
+
+#categ_articles img {
+	width: 100%;
+}
+
+h5 {
+	text-transform: uppercase;
+	font-size: 0.7em;
+}
+
+#categ_articles .date {
+	color: #93AA9D;
+	font-style: italic;
+	line-height: 0.5em;
+}
+
+#categ_articles p {
+	font-size: 0.7em;
+	line-height: 0.7em;
+}
+/*DROITE ==============================*/
+#droite {
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	flex: 5;
+	/*height: 100%;*/
+}
+/*----------------------------------*/
+#bandeau {
+	display: flex;
+	flex-direction: row;
+	color: white;
+	height: 40%;
+	/*padding-bottom: 5%;*/
+	/*flex: 5;*/
+}
+
+.element {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 0.7em;
+	margin: 4% 0;
+}
+
+h3:hover, .element_txt p:hover  {
+	color: #41A62A;
+}
+
+.element_txt {
+	padding-left: 4%;
+}
+
+.element_txt p {
+margin: 0;
+text-transform: uppercase;
+font-size: 1.2em;
+}
+.element_img {
+	overflow: hidden;
+	/*width: 30%*/
+	height: 60%;
+}
+.element_img img {
+	width: 100%;
+
+}
+/*----------------------------------*/
+#contenu {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+/*////////////////////////////////////////////////////*/
+/*FOOTER*/
+/*////////////////////////////////////////////////////*/
+footer {
+	background-color: black;
+	width: 100%;
+}
+
+/*footer div {
+	width: 17%;
+	display: flex;
+	justify-content: center;
+}*/
+
+footer p {
+	font-size: 0.7em;
+	line-height: 2em;
+	color: white;
+	line-height: 4em;
+	margin: 0;
+	padding-left: 2.5%;
+}
