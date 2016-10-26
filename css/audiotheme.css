@@ -9,6 +9,9 @@ body {
 	display: flex;
 	flex-direction: row;
 	color: white;
+	width: 100%;
+	background-color: black;
+	position: fixed;
 }
 
 #menu_left {
@@ -43,16 +46,17 @@ h1 {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 0.8em;
-	width: 6%;
+	padding: 0 1%;
+	/*width: 6%;*/
 	
 }
 /*----------------------------------*/
 #menu ul li:nth-child(7) {
-	width: 3%;
+	/*width: 3%;*/
 }
 
 #menu ul li:nth-child(8) {
-	width: 3%;
+	/*width: 3%;*/
 }
 /*----------------------------------*/
 #menu ul li:last-child, #menu ul li:last-child:hover {
@@ -75,6 +79,7 @@ h1 {
 #menu ul li a {
 	text-decoration: none;
 	color: white;
+	padding: 0 3%;
 }
 /*////////////////////////////////////////////////////*/
 /*DIV DU CONTENU*/
@@ -82,6 +87,7 @@ h1 {
 #page {
 	display: flex;
 	flex-direction: row;
+	padding-top: 3.2em;
 }
 /*GAUCHE ==============================*/
 #gauche {
